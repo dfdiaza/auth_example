@@ -12,7 +12,7 @@ class User extends CI_Controller {
         if($this->ion_auth->logged_in()) {                          // ^
                                                                     // ^
             // get the user object                                  // ^
-            $data->the_user = $this->ion_auth->user()->row();         // ^
+            $data->the_user = $this->ion_auth->user()->row();       // ^
                                                                     // ^
             // put the user object in class wide property--->---->-----
             $this->the_user = $data->the_user;
@@ -30,5 +30,13 @@ class User extends CI_Controller {
 	public function index()
 	{
 	    $this->load->view('user_view');
+	}
+	
+	
+	public function logout()
+	{
+	    // log current user out and send back to public root
+	    $this->ion_auth->logout();
+	    redirect('/');
 	}
 }

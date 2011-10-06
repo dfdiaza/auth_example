@@ -5,7 +5,7 @@
 <body>
     <h1> Login </h1>
     <? if (@$error): ?>
-        <h3 style="color:red"><?= $error ?>
+        <h3 style="color:red"><?= $error ?></h3>
     <? endif; ?>
     <?= form_open() ?>
     
