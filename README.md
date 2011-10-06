@@ -11,4 +11,5 @@ AUTH FROM SCRATCH
 Now you should be able to login with the defualt admin user
 
 email:    admin@admin.com
+
 password: password
