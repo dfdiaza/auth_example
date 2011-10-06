@@ -7,3 +7,8 @@ AUTH FROM SCRATCH
 4. Import ion_auth.sql into your database
 
 ... Follow the commits
+
+Now you should be able to login with the defualt admin user
+
+email:    admin@admin.com
+password: password
