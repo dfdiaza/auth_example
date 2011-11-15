@@ -27,16 +27,16 @@ class User extends CI_Controller {
         }
     }
 
-	public function index()
-	{
-	    $this->load->view('user_view');
-	}
-	
-	
-	public function logout()
-	{
-	    // log current user out and send back to public root
-	    $this->ion_auth->logout();
-	    redirect('/');
-	}
+    public function index()
+    {
+        $this->load->view('user_view');
+    }
+
+
+    public function logout()
+    {
+        // log current user out and send back to public root
+        $this->ion_auth->logout();
+        redirect('/');
+    }
 }
